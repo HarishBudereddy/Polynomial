@@ -106,8 +106,8 @@ struct polynomial* addPolynomial(struct polynomial* poly1,struct polynomial* pol
 	return result;
 }
 
-//10x³+7x²+3x+1
-//7x³+10x²+2x+8
+//x^4 + 10x^3 + 7x^2 + 3x + 1
+//x^7 + x^6 + 7x^3 + 10x^2 + 2x + 8
 int main(void) {
 
 	struct polynomial* poly1 = NULL, *poly2 = NULL;
