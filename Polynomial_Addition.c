@@ -96,9 +96,12 @@ struct polynomial* addPolynomial(struct polynomial* poly1,struct polynomial* pol
 			result->coef = poly2->coef;
 			poly2 = poly2->next;
 		}
-		result->next = (struct polynomial*)malloc(sizeof(struct polynomial));
-		result = result->next ;
-		result->next = NULL;
+		if(poly1 || poly2)
+		{
+			result->next = (struct polynomial*)malloc(sizeof(struct polynomial));
+			result = result->next ;
+			result->next = NULL;
+		}
 	}
 	return result;
 }
