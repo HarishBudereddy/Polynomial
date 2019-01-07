@@ -4,5 +4,7 @@ Given two polynomial numbers represented by a linked list. Write a function that
 
 result = 1x^7 + 1x^6 + 1x^4 + 17x^3 + 17x^2 + 5x^1 + 9x^0
 
-gcc Polynomial_Addition.c -Wall -o Polynomial_Addition 
+gcc Polynomial_Addition.c -Wall -o Polynomial_Addition
+
+
 ./Polynomial_Addition
